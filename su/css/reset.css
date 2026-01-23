@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li, ul, ol {
+    list-style: none;
+}
+
+/* body {
+    font-family: noto sans kr, sans-serif;
+} */
+
+
