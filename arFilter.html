@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ar_filter</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/arFilter.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/arFilter.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html"><img src="image/SNOW_logo_color.png" alt="snow-logo"></a>
+        </h1>
+
+        <div class="sub-menu">
+            <ul>
+                <li class="function"><a href="beautyEdit.html">기능 알아보기</a></li>
+                <li class="cooperation"><a href="news.html">협업 문의</a></li>
+            </ul>
+
+            <a href="#" class="arrow"><img src="image/icon_arrow.png" alt="arrow"></a>
+        </div>
+
+        <nav class="btn-wrap">
+            <ul>
+                <li><a href="beautyEdit.html">Beuty Edit</a></li>
+                <li><a href="aiContents.html">AI content</a></li>
+                <li><a href="imageContent.html">Image Content</a></li>
+                <li class="on"><a href="arFilter.html">AR Filter</a></li>
+            </ul>
+        </nav>
+
+        <div class="line"></div>
+        
+    </header>
+
+    <section>
+        <h2 class="title">AR Filter</h2>
+        <p class="text">SNOW가 제공하는 모든 필터 콘텐츠를 자사 플랫폼에서 구현할 수 있어요</p>
+
+        <!-- 탭 버튼 -->
+        <div class="tab-buttons">
+            <button data-tab="filter1" class="on"><img src="image/ar_icon1.png" alt="ar 여성1"></button>
+            <button data-tab="filter2"><img src="image/ar_icon2.png" alt="ar 여성1"></button>
+            <button data-tab="filter3"><img src="image/ar_icon3.png" alt="ar 여성2"></button>
+            <button data-tab="filter4"><img src="image/ar_icon4.png" alt="ar 여성2"></button>
+            <button data-tab="filter5"><img src="image/ar_icon5.png" alt="ar 남성"></button>
+            <button data-tab="filter6"><img src="image/ar_icon6.png" alt="ar 남성"></button>
+        </div>
+
+        <!-- 이미지 영역 -->
+    <div class="image-container">
+        <div class="left-image">
+            <img src="image/ar_woman1.png" alt="ar 여성1" data-tab="filter1" class="left-tab-image active">
+            <img src="image/ar_woman1.png" alt="ar 여성1" data-tab="filter2" class="left-tab-image">
+            <img src="image/ar_woman2.png" alt="ar 여성2" data-tab="filter3" class="left-tab-image">
+            <img src="image/ar_woman2.png" alt="ar 여성2" data-tab="filter4" class="left-tab-image">
+            <img src="image/ar_man.png" alt="ar 남성" data-tab="filter5" class="left-tab-image">
+            <img src="image/ar_man.png" alt="ar 남성" data-tab="filter6" class="left-tab-image">
+        </div>
+
+        <img src="image/image-arrow.png" alt="arrow" class="arrow">
+
+        <div class="right-image">
+            <img src="image/ar_filter1.png" alt="ar 필터1" data-tab="filter1" class="tab-image active">
+            <img src="image/ar_filter2.png" alt="ar 필터2" data-tab="filter2" class="tab-image">
+            <img src="image/ar_filter3.png" alt="ar 필터3" data-tab="filter3" class="tab-image">
+            <img src="image/ar_filter4.png" alt="ar 필터4" data-tab="filter4" class="tab-image">
+            <img src="image/ar_filter5.png" alt="ar 필터5" data-tab="filter5" class="tab-image">
+            <img src="image/ar_filter6.png" alt="ar 필터6" data-tab="filter6" class="tab-image">
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <img src="image/SNOW_footer.png" alt="snow-logo">
+            <div class="info">
+                <p><span>회사명</span>스노우 주식회사</p>
+                <p><span>주소</span>경기도 성남시 분당구 분당내곡로 131, 판교 테크원타워 18층</p>
+                <p><span>이메일</span>dl_snowbusiness@snowcorp.com</p>
+                <p><span><a href="#">개인정보 처리방침</a></span></p>
+            </div>
+            <p class="copy"><span>COPYRIGHT &copy;2024. SNOW. ALL RIGHT RESERVED.</span></p>
+        </div>
+    </footer>
+</body>
+</html>

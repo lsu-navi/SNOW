@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 0 400px;
+    align-items: center;
+
+    position: relative;
+    overflow: visible;
+}
+
+header h1 {
+    width: 148px;
+    height: 35px;
+    margin-right: 50px;
+}
+
+header .sub-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .sub-menu .cooperation {
+    font-size: 24px;
+}
+
+header .sub-menu .function {
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 22.6%;
+    background-color: #d9d9d9;
+    padding: 10px 40px;
+    border-radius: 10px;
+    z-index: 1000;
+
+    display: none;
+}
+
+header .sub-menu .arrow {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+header .btn-wrap {
+    position: absolute;
+    right: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .btn-wrap ul {
+    display: flex;
+    gap: 100px;
+}
+
+header .btn-wrap ul li {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header .btn-wrap ul li.on {
+    color: #0cc8f0;
+}
+header .line {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #0cc8f0 0%, #ffffff 100%);
+}
+
+section {
+    margin: 200px 400px 200px 400px;
+    position: relative;
+}
+
+section .title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section .text {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+section .news-wrap {
+    position: relative;
+    min-height: 500px;
+}
+
+section .news-wrap .news-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section .news-wrap .news-main a {
+    display: block;
+    overflow: hidden;
+}
+
+section .news-wrap .news-main a img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+section .news-wrap .news-main img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+section .news-wrap .news-main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section .news-wrap .news-main span {
+    font-size: 16px;
+    color: #666;
+}
+
+section .news-wrap .news-sub {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section .news-wrap .news-sub ul li {
+    padding: 38px;
+    background-color: #f5f7f9;
+    border-radius: 15px;
+    margin: 20px 0 40px 0;
+}
+
+section .news-wrap .news-sub ul li:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+section .news-wrap .news-sub ul li a h2 {
+    margin-bottom: 10px;
+}
+
+section .more {
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+section .more a {
+    display: block;
+    font-size: 24px;
+    color: #999;
+}
+
+section .more a:hover {
+    text-decoration: underline;
+}

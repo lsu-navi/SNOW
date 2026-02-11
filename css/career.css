@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    padding: 0 400px;
+    align-items: center;
+
+    position: relative;
+    overflow: visible;
+}
+
+header h1 {
+    width: 148px;
+    height: 35px;
+    margin-right: 50px;
+}
+
+header .sub-menu {
+    display: flex;
+    align-items: center;
+}
+
+header .sub-menu .cooperation {
+    font-size: 24px;
+}
+
+header .sub-menu .function {
+    font-size: 24px;
+    position: absolute;
+    top: 80%;
+    left: 22.6%;
+    background-color: #d9d9d9;
+    padding: 10px 40px;
+    border-radius: 10px;
+    z-index: 1000;
+
+    display: none;
+}
+
+header .sub-menu .arrow {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+header .btn-wrap {
+    position: absolute;
+    right: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .btn-wrap ul {
+    display: flex;
+    gap: 100px;
+}
+
+header .btn-wrap ul li {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header .btn-wrap ul li.on {
+    color: #0cc8f0;
+}
+header .line {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #0cc8f0 0%, #ffffff 100%);
+}
+
+section {
+    margin: 0 400px 550px 400px;
+}
+
+section .title-wrap {
+    margin-top: 450px;
+}
+
+section .title {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+section .text {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+section .arrow {
+    display: flex;
+    gap: 20px;
+}
+
+section .arrow button {
+    outline: 1px solid #0cc8f0;
+    background: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section .arrow button img {
+    display: block;
+    width: 100%;
+    transition: filter 0.3s ease;
+}
+
+section .arrow button:hover {
+    background-color: #0cc8f0;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+section .arrow button:hover img {
+    /* 이미지를 흰색으로: 검정으로 만든 뒤 반전 */
+    filter: brightness(0) invert(1);
+}
+
+section .team-wrap {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    overflow: hidden;
+    max-width: 100vw;
+}
+
+section .team-wrap ul {
+    display: flex;
+    gap: 35px;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+
+section .team-wrap ul li {
+    position: relative;
+}
+
+section .team-wrap ul li .info {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+section .team-wrap ul li:first-child .info {
+    color: #ffffff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+}
+
+section .team-wrap ul li:last-child .info {
+    color: #ffffff;
+}
+
+section .team-wrap ul li .info h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section .team-wrap ul li .info .txt {
+    font-size: 20px;
+}
+
+section .team-wrap ul li img {
+    display: block;
+    border-radius: 30px;
+}

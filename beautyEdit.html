@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beutyEdit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/beautyEdit.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/beautyEdit.js"></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html"><img src="image/SNOW_logo_color.png" alt="snow-logo"></a>
+        </h1>
+
+        <div class="sub-menu">
+            <ul>
+                <li class="function"><a href="beautyEdit.html">기능 알아보기</a></li>
+                <li class="cooperation"><a href="news.html">협업 문의</a></li>
+            </ul>
+
+            <a href="#" class="arrow"><img src="image/icon_arrow.png" alt="arrow"></a>
+        </div>
+
+        <nav class="btn-wrap">
+            <ul>
+                <li class="on"><a href="beautyEdit.html">Beauty Edit</a></li>
+                <li><a href="aiContents.html">AI content</a></li>
+                <li><a href="imageContent.html">Image Content</a></li>
+                <li><a href="arFilter.html">AR Filter</a></li>
+            </ul>
+        </nav>
+
+        <div class="line"></div>
+        
+    </header>
+
+    <section>
+        <h2 class="title">Beauty Edit</h2>
+        <p class="text">SNOW앱 내에서 제공하는 다양한 뷰티 보정 기능을 이용할 수 있어요.</p>
+
+        <div class="picture-wrap">
+            <img id="beauty-image" src="image/beauty0.webp" alt="Beauty Edit">
+        </div>
+        <ul class="feature-list">
+            <li>
+                <div class="feature-info">
+                    <p>Make Up AI/AR</p>
+                    <span>테마별 메이크업</span>
+                </div>
+                <button type="button" class="toggle-switch" role="switch" aria-checked="false" data-index="0">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <div class="feature-info">
+                    <p>Hair AI</p>
+                    <span>헤어스타일 / 색상 변경</span>
+                </div>
+                <button type="button" class="toggle-switch" role="switch" aria-checked="false" data-index="1">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <div class="feature-info">
+                    <p>Skin GAN</p>
+                    <span>얼굴 부위 상세 편집</span>
+                </div>
+                <button type="button" class="toggle-switch" role="switch" aria-checked="false" data-index="2">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <div class="feature-info">
+                    <p>Filter</p>
+                    <span>사진 이미지의 색감 필터</span>
+                </div>
+                <button type="button" class="toggle-switch" role="switch" aria-checked="false" data-index="3">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                    </span>
+                </button>
+            </li>
+            <li>
+                <div class="feature-info">
+                    <p>Super resolution</p>
+                    <span>고화질 이미지 생성</span>
+                </div>
+                <button type="button" class="toggle-switch" role="switch" aria-checked="false" data-index="4">
+                    <span class="toggle-track">
+                        <span class="toggle-thumb"></span>
+                    </span>
+                </button>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="footer-wrap">
+            <img src="image/SNOW_footer.png" alt="snow-logo">
+            <div class="info">
+                <p><span>회사명</span>스노우 주식회사</p>
+                <p><span>주소</span>경기도 성남시 분당구 분당내곡로 131, 판교 테크원타워 18층</p>
+                <p><span>이메일</span>dl_snowbusiness@snowcorp.com</p>
+                <p><span><a href="#">개인정보 처리방침</a></span></p>
+            </div>
+            <p class="copy"><span>COPYRIGHT &copy;2024. SNOW. ALL RIGHT RESERVED.</span></p>
+        </div>
+    </footer>
+</body>
+</html>
